@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="casc-logo.png">
+    <title>CASCle</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="game">
+        <div id="header">
+          <img src="casc-logo.png" alt="CASC logo" class="casclogo" style="float: left;">
+          <img src="casc-logo.png" alt="CASC logo" class="casclogo" style="float: right;">
+          <h1 class="title">Govordle</h1>
+        </div>
+        <div id="boardcontainer">
+          <div id="board">
+
+          </div>
+        </div>
+        <div id="popup">
+          Next Govordle in:
+          <div id="timestamp"></div>
+          <button type="button" name="button" onclick="copyresults()" id="copybutton">Copy results to clipboard</button>
+        </div>
+        <h2 id="answer"></h2>
+        <div id="keyboardcontainer">
+          <div class="keyrow">
+            <button class="key" id="KeyQ">q</button>
+            <button class="key" id="KeyW">w</button>
+            <button class="key" id="KeyE">e</button>
+            <button class="key" id="KeyR">r</button>
+            <button class="key" id="KeyT">t</button>
+            <button class="key" id="KeyY">y</button>
+            <button class="key" id="KeyU">u</button>
+            <button class="key" id="KeyI">i</button>
+            <button class="key" id="KeyO">o</button>
+            <button class="key" id="KeyP">p</button>
+          </div>
+          <div class="keyrow">
+            <button class="key" id="KeyA">a</button>
+            <button class="key" id="KeyS">s</button>
+            <button class="key" id="KeyD">d</button>
+            <button class="key" id="KeyF">f</button>
+            <button class="key" id="KeyG">g</button>
+            <button class="key" id="KeyH">h</button>
+            <button class="key" id="KeyJ">j</button>
+            <button class="key" id="KeyK">k</button>
+            <button class="key" id="KeyL">l</button>
+          </div>
+          <div class="keyrow">
+            <button class="key" id="Enter" class="wide-button">Enter</button>
+            <button class="key" id="KeyZ">z</button>
+            <button class="key" id="KeyX">x</button>
+            <button class="key" id="KeyC">c</button>
+            <button class="key" id="KeyV">v</button>
+            <button class="key" id="KeyB">b</button>
+            <button class="key" id="KeyN">n</button>
+            <button class="key" id="KeyM">m</button>
+            <button class="key" id="Backspace" class="wide-button">⌫</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

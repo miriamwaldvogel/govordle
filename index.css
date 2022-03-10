@@ -1,0 +1,123 @@
+html, body{
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#header{
+  text-align: center;
+}
+.title {
+  border-bottom: 1px solid rgb(58, 58, 60);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.4rem 0 0.4rem 0;
+  text-align: center;
+}
+
+.casclogo {
+  height: 40px;
+}
+
+#boardcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tile {
+  border: 2px solid rgb(211, 214, 218);
+  color: black;
+  min-width: 64px;
+  min-height: 64px;
+  margin: 2.5px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#keyboardcontainer {
+  height: 200px;
+}
+
+.keyrow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+
+.key {
+  font-family: inherit;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  height: 58px;
+  cursor: pointer;
+  background-color: #d3d6da;
+  flex-grow: 1;
+  text-transform: uppercase;
+  margin-right: 6px;
+  border-radius: 4px;
+  user-select: none;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans serif;
+}
+
+.key.wide-button {
+  flex-grow: 1.5;
+}
+
+.correct {
+    background-color: #6AAA64;
+    color: white;
+    border-color: white;
+}
+
+.present {
+    background-color: #C9B458;
+    color: white;
+    border-color: white;
+}
+
+.wrong {
+    background-color: #787C7E;
+    color: white;
+    border-color:white;
+}
+
+#copybutton{
+  background-color: #6AAA64;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  border-color: #6AAA64
+}
